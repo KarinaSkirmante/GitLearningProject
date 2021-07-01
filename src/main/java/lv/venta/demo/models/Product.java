@@ -26,7 +26,9 @@ import lombok.ToString;
 @Entity
 @Getter @Setter @NoArgsConstructor @ToString
 public class Product {
-
+	
+//katrinas 
+	
 	//1. data part
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
@@ -35,17 +37,17 @@ public class Product {
 	private int id;
 	
 	
-	@NotNull(message="Nedrīkst būt null vērtība")
-	@NotEmpty(message="Nedrīkst būt tukšs")
-	@Size(min=3, max = 20, message="Simbolu skaitam jābūt no 3 līdz 20")
-	@Pattern(regexp="[A-ZĀČĒĢĪĶĻŅŠŪŽ]{1}[a-zāčēģīķļņšūž]+", message="Var saturēt tikai burtus")
+	@NotNull(message="NedrÄ«kst bÅ«t null vÄ“rtÄ«ba")
+	@NotEmpty(message="NedrÄ«kst bÅ«t tukÅ¡s")
+	@Size(min=3, max = 20, message="Simbolu skaitam jÄ�bÅ«t no 3 lÄ«dz 20")
+	@Pattern(regexp="[A-ZÄ€ÄŒÄ’Ä¢ÄªÄ¶Ä»Å…Å ÅªÅ½]{1}[a-zÄ�Ä�Ä“Ä£Ä«Ä·Ä¼Å†Å¡Å«Å¾]+", message="Var saturÄ“t tikai burtus")
 	@Column(name="Category")
 	private String category;
 	
 	@NotNull
 	@NotEmpty
 	@Size(min=3, max = 20)
-	@Pattern(regexp="[A-ZĀČĒĢĪĶĻŅŠŪŽ]{1}[a-zāčēģīķļņšūž\\s]+")
+	@Pattern(regexp="[A-ZÄ€ÄŒÄ’Ä¢ÄªÄ¶Ä»Å…Å ÅªÅ½]{1}[a-zÄ�Ä�Ä“Ä£Ä«Ä·Ä¼Å†Å¡Å«Å¾\\s]+")
 	@Column(name="Title")
 	private String title;
 	
