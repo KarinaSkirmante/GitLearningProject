@@ -22,6 +22,9 @@ import lv.venta.demo.repos.IProductRepo;
 //comment
 @Controller
 public class ProductController {
+	//katrinas ko
+//	System.out.println("meow");
+	
 	
 	@Autowired
 	IProductRepo prodRepo;
@@ -32,9 +35,9 @@ public class ProductController {
 	public String getHomePage()
 	{
 		System.out.println("getHomePage is working");
-		Product p1 = new Product("Dators", "Portatīvais asus", 400.99f, 4.5, "Super dators", 2);
-		Product p2 = new Product("Pārtika", "Saldējums ekselence", 0.99f, 0.3, "Loti garšīgs saldējums", 15);
-		Product p3 = new Product("Pārtika", "Limonāde", 0.67f, 0.6, "Atsvaidzinoša", 5);
+		Product p1 = new Product("Dators", "PortatÄ«vais asus", 400.99f, 4.5, "Super dators", 2);
+		Product p2 = new Product("PÄ�rtika", "SaldÄ“jums ekselence", 0.99f, 0.3, "Loti garÅ¡Ä«gs saldÄ“jums", 15);
+		Product p3 = new Product("PÄ�rtika", "LimonÄ�de", 0.67f, 0.6, "AtsvaidzinoÅ¡a", 5);
 			
 		/*
 		allProducts.add(p1);
@@ -48,13 +51,13 @@ public class ProductController {
 		
 		
 		
-		Product result = prodRepo.findByTitle("Limonāde");
+		Product result = prodRepo.findByTitle("LimonÄ�de");
 		System.out.println(result);
 		
-		ArrayList<Product> result2 = prodRepo.findByCategory("Pārtika");
+		ArrayList<Product> result2 = prodRepo.findByCategory("PÄ�rtika");
 		System.out.println(result2);
 		
-		ArrayList<Product> result3 = prodRepo.findByCategoryAndQuantity("Pārtika", 5);
+		ArrayList<Product> result3 = prodRepo.findByCategoryAndQuantity("PÄ�rtika", 5);
 		System.out.println(result3);
 		
 		
@@ -72,7 +75,7 @@ public class ProductController {
 	@GetMapping("/testProduct")//localhost:8080/testProduct
 	public String getTestProduct(Model model)
 	{
-		Product myTestProduct = new Product("Saldumi", "Saldējums Ekselence", 0.99f, 0.3, "Loti garšīgs saldējums", 15);
+		Product myTestProduct = new Product("Saldumi", "SaldÄ“jums Ekselence", 0.99f, 0.3, "Loti garÅ¡Ä«gs saldÄ“jums", 15);
 		model.addAttribute("packet", myTestProduct);
 		System.out.println(myTestProduct.toString());
 		return "test-product-page";//will show test-product-page.html
@@ -81,7 +84,7 @@ public class ProductController {
 	@GetMapping("/testProduct2")//localhost:8080/testProduct2
 	public String getTestProduct2(Model model)
 	{
-		Product p1 = new Product("Dators", "Portatīvais ASUS", 400.99f, 4.5, "Super dators", 2);
+		Product p1 = new Product("Dators", "PortatÄ«vais ASUS", 400.99f, 4.5, "Super dators", 2);
 		model.addAttribute("packet", p1);
 		return "test-product-page";//will show test-product-page.html
 	}
