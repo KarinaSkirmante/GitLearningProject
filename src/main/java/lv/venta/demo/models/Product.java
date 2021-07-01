@@ -1,3 +1,4 @@
+
 package lv.venta.demo.models;
 
 import javax.persistence.Column;
@@ -85,4 +86,10 @@ public class Product {
 	
 	
 	
+
+
+	
+	
+	
 }
+
