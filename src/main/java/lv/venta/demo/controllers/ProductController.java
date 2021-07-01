@@ -19,6 +19,7 @@ import lv.venta.demo.repos.IProductRepo;
 
 
 //CONTROLLER FROM MVC
+//comment
 @Controller
 public class ProductController {
 	
