@@ -26,7 +26,7 @@ import lombok.ToString;
 @Getter @Setter @NoArgsConstructor @ToString
 public class Product {
 	
-//katrinas komentars
+//katrinas 
 	
 	//1. data part
 	@Id

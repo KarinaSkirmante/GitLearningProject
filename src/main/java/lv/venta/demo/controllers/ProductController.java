@@ -22,7 +22,7 @@ import lv.venta.demo.repos.IProductRepo;
 //comment
 @Controller
 public class ProductController {
-	//katrinas komentars
+	//katrinas ko
 //	System.out.println("meow");
 	
 	
