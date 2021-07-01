@@ -11,3 +11,5 @@ class Demo1ApplicationTests {
 	}
 
 }
+//Maijas koments 1  
+// pārbaudu par space
