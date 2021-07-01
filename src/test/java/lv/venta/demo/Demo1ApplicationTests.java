@@ -11,4 +11,4 @@ class Demo1ApplicationTests {
 	}
 
 }
-//Maijas koments 
+//Maijas koments 1 
