@@ -1,6 +1,6 @@
 package lv.venta.demo.models;
 // pēdējais koments 
-// galīgi pēdējais final gala 
+// galīgi pēdējais final gala   
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
