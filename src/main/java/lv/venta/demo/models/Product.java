@@ -19,7 +19,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
-
+//Comment from karina
 //MODEL from MVC
 @Table(name="ProductTable")
 @Entity
