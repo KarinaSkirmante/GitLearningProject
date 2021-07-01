@@ -1,7 +1,7 @@
 package lv.venta.demo.config;
 
 import java.sql.Types;
-
+// vēl viens komentārs 
 import org.hibernate.dialect.Dialect;
 import org.hibernate.dialect.function.StandardSQLFunction;
 import org.hibernate.dialect.function.SQLFunctionTemplate;
